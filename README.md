@@ -18,6 +18,43 @@ Built with precision and power, this extension saves hours of manual work, uncov
 - **Exportable Results**: Downloads comprehensive test outcomes as a JSON file, complete with approved strategies and summary stats.
 - **One-Click Activation**: Launch the process with a stylish "ATR" button added to TradingView’s interface.
 
+## 🔧 Configuration Options
+
+| Setting                     | Description                                       | Default                     |
+| --------------------------- | ------------------------------------------------- | --------------------------- |
+| **MA Type**                 | Choose between **SMA** or **EMA**                 | `SMA`                       |
+| **Fast/Slow MA Ranges**     | Comma-separated window sizes for your MAs         | `5,10,15,20,25,30 / 20–100` |
+| **KC Length Range**         | Keltner Channel lengths for volatility filtering  | `4,5,6,7`                   |
+| **Min Trades**              | Minimum trades to consider a valid strategy       | `40`                        |
+| **Max Drawdown (%)**        | Maximum drawdown threshold                        | `20`                        |
+| **Min Profit Factor**       | Minimum profit factor to retain a strategy        | `1.5`                       |
+| **Top Strategies Count**    | How many top strategies to take into ATR tests    | `3`                         |
+| **ATR Drawdown Threshold**  | Max drawdown (%) for ATR-based tests              | `20`                        |
+| **ATR SL / TP Multipliers** | Comma-separated ATR multipliers for stop-loss/TPs | `1.5,2,3,4 / 2,3,4`         |
+
+
+## 📸 Screenshots
+
+![image](https://github.com/user-attachments/assets/86ef377b-2bdf-48b0-afd8-c77465229984)
+
+
+---
+
+## 📈 Architectural Overview
+
+- **Manifest V3**: Lightweight service worker (`background.js`) triggers `content.js` on TradingView pages.
+- **Content Script**: Injects UI, sweeps parameter spaces, captures metrics from the DOM.
+- **Persistent Settings**: `chrome.storage.sync` powers the settings pop‑up (`popup.html` + `popup.js`).
+- **Result Management**: Real-time auto-saving to `localStorage` with one-click JSON export.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+
+
 ---
 
 ## 🛠️ How It Works
