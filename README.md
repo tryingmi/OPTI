@@ -78,6 +78,66 @@ This project demonstrates deep expertise in:
 
 ## 📦 Installation
 
-1. **Clone the Repository**:
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-repo/enhanced-atr-optimizer.git
+   git clone https://github.com/your-username/enhanced-atr-optimizer.git
+   cd enhanced-atr-optimizer
+   ```
+2. **Load into Chrome**:
+   - Go to `chrome://extensions/`.  
+   - Enable **Developer mode**.  
+   - Click **Load unpacked** and select this project folder.
+3. **Prepare TradingView**:
+   - Open TradingView and load a strategy that uses moving averages and Keltner Channels.
+4. **Configure & Run**:
+   - Click the extension icon → adjust settings → save.  
+   - On the chart, click the green **ATR** button to start optimization.
+5. **Review Results**:
+   - Listen for the completion bell and download the JSON results file.
+
+---
+
+## 📈 Sample Output
+
+```json
+{
+  "validResults": [
+    {
+      "kcLength": 5,
+      "fastMA": 15,
+      "slowMA": 50,
+      "maType": "EMA",
+      "atrStopLoss": 2,
+      "atrTakeProfit": 3,
+      "profit": 12500,
+      "drawdown": 12.5,
+      "totalTrades": 45,
+      "profitFactor": 2.1
+    }
+  ],
+  "summary": {
+    "totalATRTests": 48,
+    "approvedATR": 5,
+    "timeouts": 2,
+    "exclusions": 41,
+    "testingDurationMinutes": "15.32"
+  }
+}
+```
+
+---
+
+## 🔮 Future Enhancements
+
+- **Broader Indicator Support**: Add optimization for RSI, MACD, or custom indicators.  
+- **Advanced Filters**: Multi-metric sorting or user‑defined ranking.  
+- **Cloud Integration**: Sync results to a remote service for backup and analysis.  
+- **Scheduled Runs**: Automate tests on a schedule via the background script.
+
+---
+
+## 📄 License
+
+Licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+
