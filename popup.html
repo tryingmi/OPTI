@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ATR Optimizer Settings</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 10px; }
+    label { display: block; margin-top: 10px; }
+    input[type="text"], input[type="number"] { width: 100%; }
+    button { margin-top: 10px; }
+    fieldset { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>ATR Optimizer Settings</h2>
+  <form id="settingsForm">
+    <fieldset>
+      <legend>MA Type</legend>
+      <label>
+        <input type="radio" name="maType" value="SMA" checked> SMA
+      </label>
+      <label>
+        <input type="radio" name="maType" value="EMA"> EMA
+      </label>
+    </fieldset>
+
+    <label for="fastRange">Fast MA Range (comma separated):</label>
+    <input type="text" id="fastRange" name="fastRange" value="5,10,15,20,25,30">
+
+    <label for="slowRange">Slow MA Range (comma separated):</label>
+    <input type="text" id="slowRange" name="slowRange" value="20,30,40,50,60,70,80,90,100">
+
+    <label for="kcRange">KC Length Range (comma separated):</label>
+    <input type="text" id="kcRange" name="kcRange" value="4,5,6,7">
+
+    <label for="minTrades">Min Trades:</label>
+    <input type="number" id="minTrades" name="minTrades" value="40">
+
+    <label for="maxDrawdown">Max Drawdown (%):</label>
+    <input type="number" id="maxDrawdown" name="maxDrawdown" value="20">
+
+    <label for="minProfitFactor">Min Profit Factor:</label>
+    <input type="number" step="0.1" id="minProfitFactor" name="minProfitFactor" value="1.5">
+
+    <label for="topStrategiesCount">Top Strategies Count:</label>
+    <input type="number" id="topStrategiesCount" name="topStrategiesCount" value="3">
+
+    <label for="atrDrawdownThreshold">ATR Drawdown Threshold (%):</label>
+    <input type="number" id="atrDrawdownThreshold" name="atrDrawdownThreshold" value="20">
+
+    <label for="atrStopLossValues">ATR Stop Loss Values (comma separated):</label>
+    <input type="text" id="atrStopLossValues" name="atrStopLossValues" value="1.5,2,3,4">
+
+    <label for="atrTakeProfitValues">ATR Take Profit Values (comma separated):</label>
+    <input type="text" id="atrTakeProfitValues" name="atrTakeProfitValues" value="2,3,4">
+
+    <button type="submit">Save Settings</button>
+  </form>
+  <script src="popup.js"></script>
+</body>
+</html>
