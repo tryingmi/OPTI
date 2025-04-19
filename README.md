@@ -5,10 +5,6 @@ atr-optimizer-chrome-extension/
 ├── content.js
 ├── popup.html
 ├── popup.js
-├── icons/
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
 └── README.md
 ```
 
@@ -34,9 +30,7 @@ atr-optimizer-chrome-extension/
 ---
 
 ## 📸 Screenshots
-
-
-
+![image](https://github.com/user-attachments/assets/50d3d8d8-5068-47d9-878d-f3e284f283e3)
 ---
 
 ## 🛠️ Installation & Quickstart
@@ -48,17 +42,13 @@ atr-optimizer-chrome-extension/
    cd atr-optimizer-chrome-extension
    ```
 
-2. **Add your icons**
-
-   - Drop `icon16.png`, `icon48.png`, `icon128.png` into the `icons/` folder.
-
-3. **Load as a Chrome Extension**
+2. **Load as a Chrome Extension**
 
    - Open `chrome://extensions/` in your browser.
    - Enable **Developer mode**.
    - Click **Load unpacked**, select this project directory.
 
-4. **Configure & Run**
+3. **Configure & Run**
 
    - Click the extension icon → set your parameter ranges in the pop‑up.
    - Go to any TradingView chart → click the floating **ATR** button.
