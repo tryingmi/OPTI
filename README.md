@@ -1,13 +1,3 @@
-```plaintext
-atr-optimizer-chrome-extension/
-├── manifest.json
-├── background.js
-├── content.js
-├── popup.html
-├── popup.js
-└── README.md
-```
-
 # 🚀 ATR Optimizer Chrome Extension
 
 &#x20;&#x20;
