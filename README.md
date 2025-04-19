@@ -37,24 +37,6 @@ Built with precision and power, this extension saves hours of manual work, uncov
 
 ![image](https://github.com/user-attachments/assets/86ef377b-2bdf-48b0-afd8-c77465229984)
 
-
----
-
-## 📈 Architectural Overview
-
-- **Manifest V3**: Lightweight service worker (`background.js`) triggers `content.js` on TradingView pages.
-- **Content Script**: Injects UI, sweeps parameter spaces, captures metrics from the DOM.
-- **Persistent Settings**: `chrome.storage.sync` powers the settings pop‑up (`popup.html` + `popup.js`).
-- **Result Management**: Real-time auto-saving to `localStorage` with one-click JSON export.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
-
-
-
 ---
 
 ## 🛠️ How It Works
