@@ -2,7 +2,7 @@
 
 **🚀 Supercharge Your Trading with Automated Strategy Optimization**
 
-Say goodbye to tedious manual parameter tweaking! The **Enhanced ATR Optimizer** Chrome extension revolutionizes trading strategy optimization by automating the testing of hundreds of parameter combinations on TradingView. Designed for traders who want data-driven results without the hassle, this tool optimizes moving averages, Keltner Channels, and ATR-based stop loss/take profit levels—all while running efficiently in the background with a sleek, customizable popup interface.
+Say goodbye to tedious manual parameter tweaking! The **Enhanced ATR Optimizer** Chrome extension revolutionizes trading strategy optimization by automating the testing of hundreds of parameter combinations on TradingView. Designed for traders who want data-driven results without the hassle, this tool optimizes moving averages, Keltner Channels, and ATR-based stop loss/take profit levels—all while running efficiently in the background with a simple, customizable popup interface.
 
 Built with precision and power, this extension saves hours of manual work, uncovers high-performing strategies, and exports detailed results for analysis. Whether you’re a day trader or a long-term strategist, the Enhanced ATR Optimizer is your key to unlocking trading success.
 
